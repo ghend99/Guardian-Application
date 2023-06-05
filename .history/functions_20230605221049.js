@@ -1,6 +1,4 @@
 let darkMode = false;
-let students = [];
-let pins = [];
 
 const darkModeToggle = function () {
   darkMode = true;
