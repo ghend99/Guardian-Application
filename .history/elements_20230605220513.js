@@ -15,9 +15,6 @@ const pinResetContainer = document.getElementById("password-reset-container");
 const inputs = document.querySelectorAll(".input");
 const buttons = document.querySelectorAll(".submit-button");
 const logo = document.querySelector(".header-middle-section-logo");
-const studentManagementHeading = document.querySelector(
-  ".student-management-heading"
-);
 
 const btnDarkModeToggle = document.querySelector(".header-dark-mode-toggle");
 const btnLoginHeader = document.getElementById("header-login-button");
