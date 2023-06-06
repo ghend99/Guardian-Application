@@ -107,6 +107,7 @@ button {
   right: 10%;
   margin: 0;
   cursor: pointer;
+  border-bottom: solid;
 }
 
 #header-login-button {
