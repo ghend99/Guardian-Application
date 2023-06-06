@@ -94,4 +94,4 @@ const btnComposeMessageSubmit = document.getElementById(
 
 const inboxLine = document.getElementById("inbox-line");
 
-const btnSidebarOpen = document.getElementById("sidebar-open");
+const btnSidebarOpen = document.getElementById("#sidebar-open");
