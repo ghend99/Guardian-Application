@@ -48,6 +48,7 @@ const Student = class {
     fullName,
     inbox,
     sent,
+    from,
     pin,
     referals,
     year,
@@ -59,6 +60,7 @@ const Student = class {
     this.year = addStudentYearInput.value;
     this.inbox = [];
     this.sent = [];
+    this.from = [];
     this.pin = addStudentPinInput.value;
     this.referals = 0;
     this.lessons1 = [];
@@ -74,7 +76,7 @@ const getSavedStudents = function () {
   if (studentsAccessed !== null) {
     students.length === 0;
     students.push(...studentsAccessed);
-    console.log(students);
+    // console.log(students);
   } else {
     console.log(`NULL`);
     return;
@@ -87,7 +89,7 @@ const getSavedPins = function () {
   if (pinsAccessed !== null) {
     pins.length === 0;
     pins.push(...pinsAccessed);
-    console.log(pins);
+    // console.log(pins);
   } else {
     console.log(`NULL PINS`);
   }
@@ -137,6 +139,7 @@ const login = function () {
     studentInformationYear.textContent = `Year Group: ${target.year}`;
     studentInformationReferals.textContent =
       target.referals < 0 ? "Referals: 0" : `Referals: ${target.referals}`;
+    updateInboxLoad(target);
   }
 };
 
