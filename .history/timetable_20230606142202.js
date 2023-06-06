@@ -178,8 +178,7 @@ const friday3 = document.querySelector(".lesson-friday-3");
 const friday4 = document.querySelector(".lesson-friday-4");
 const friday5 = document.querySelector(".lesson-friday-5");
 
-btnUpdateTimetableLink.addEventListener("click", function (e) {
-  e.preventDefault();
+btnUpdateTimetableLink  e.preventDefault();
   const target = students.find(
     (stu) =>
       stu.fullName === `${currentAccount.fullName}` &&
