@@ -89,7 +89,7 @@ btnInboxOpen.addEventListener("click", function (e) {
 btnTimetableOpen.addEventListener("click", function (e) {
   e.preventDefault();
   inboxContainer.style.display = "none";
-  timetableContainer.style.display = "block";
+  timetableContainer.style.display = "grid";
 });
 
 btnStudentManagementClose.addEventListener("click", function (e) {

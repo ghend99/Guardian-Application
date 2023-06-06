@@ -228,5 +228,6 @@ btnUpdateTimetableLink.addEventListener("click", function (e) {
     thursday5.value,
     friday5.value
   );
+  localStorage.setItem("students", JSON.stringify(students));
   alert(`Timetable information submitted`);
 });
