@@ -87,5 +87,3 @@ const composeMessageText = document.getElementById("compose-message-text-area");
 const btnComposeMessageSubmit = document.getElementById(
   "compose-message-submit"
 );
-
-const inboxLine = document.getElementById("inbox-line");

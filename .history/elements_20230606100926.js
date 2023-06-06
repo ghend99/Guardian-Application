@@ -88,4 +88,4 @@ const btnComposeMessageSubmit = document.getElementById(
   "compose-message-submit"
 );
 
-const inboxLine = document.getElementById("inbox-line");
+const inboxLine = document.getElementById("");
