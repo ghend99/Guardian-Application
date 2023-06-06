@@ -49,6 +49,7 @@ btnLoginModalSubmit.addEventListener("click", function (e) {
 
 btnComposeMessageOpen.addEventListener("click", function (e) {
   e.preventDefault();
+
   if (currentAccount === undefined) {
     alert("You need to login first");
   } else {
