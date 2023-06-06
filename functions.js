@@ -1,6 +1,7 @@
 let darkMode = false;
 let students = [];
 let pins = [];
+let currentAccount;
 
 const darkModeToggle = function () {
   darkMode = true;
