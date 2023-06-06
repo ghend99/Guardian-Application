@@ -154,7 +154,7 @@ const monday3 = document.querySelector(".lesson-monday-3");
 const monday4 = document.querySelector(".lesson-monday-4");
 const monday5 = document.querySelector(".lesson-monday-5");
 
-const tuesday1 = document.querySelector(".lesson-tuesday-1");
+y1 = document.querySelector(".lesson-tuesday-1");
 const tuesday2 = document.querySelector(".lesson-tuesday-2");
 const tuesday3 = document.querySelector(".lesson-tuesday-3");
 const tuesday4 = document.querySelector(".lesson-tuesday-4");
