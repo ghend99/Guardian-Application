@@ -98,17 +98,3 @@ const getStudentsLocalStorage = () => {
 const getPinsLocalStorage = () => {
   pinsAccessed = JSON.parse(localStorage.getItem(`pins`));
 };
-
-const createStudent = function () {
-  let newStudent = new Student(
-    addStudentFirstNameInput,
-    addStudentLastNameInput,
-    addStudentYearInput,
-    addStudentPinInput.value,
-    addStudentRePinInput.value
-  );
-  students.push(newStudent);
-  pins.push(addStudentPinInput.value);
-  localStorage.setItem("students", JSON.stringify(students));
-  localStorage.setItem("pins", JSON.stringify(pins));
-};
