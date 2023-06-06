@@ -21,7 +21,6 @@ btnAddStudentClose.addEventListener("click", function (e) {
 
 btndAddStudentSubmit.addEventListener("click", function (e) {
   e.preventDefault();
-  createStudent();
 });
 
 btnLoginHeader.addEventListener("click", function (e) {
