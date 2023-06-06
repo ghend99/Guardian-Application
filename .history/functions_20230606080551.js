@@ -136,19 +136,3 @@ const login = function () {
       target.referals < 0 ? "Referals: 0" : `Referals: ${target.referals}`;
   }
 };
-
-const addReferal = function () {
-  getStudentsLocalStorage();
-  const searchParameter = addReferalFullName.value;
-  const target = students.find((stu) => stu.fullName === `${searchParameter}`);
-  if (target === undefined) {
-    alert(`Not a valid user`);
-  } else {
-    target["referals"] = target.referals + 1;
-    studentInformationReferals.textContent =
-      target.referals < 0 ? "Referals: 0" : `Referals: ${target.referals}`;
-    localStorage.setItem("students", JSON.stringify(students));
-    addReferalFullName.value = "";
-    alert(`Referal Sent`);
-  }
-};
