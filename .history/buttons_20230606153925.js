@@ -99,6 +99,4 @@ btnStudentManagementClose.addEventListener("click", function (e) {
   inboxContainer.style.display = "none";
 });
 
-btnUpdateTimetableLink.addEventListener("click", function (e) {
-  updateTimetableLink();
-});
+btnUpdateTimetableLink.addEventListener("click", function (e) {});
