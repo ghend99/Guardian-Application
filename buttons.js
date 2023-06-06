@@ -34,6 +34,8 @@ btnLoginHeader.addEventListener("click", function (e) {
   login();
   studentInformation.forEach((e) => {
     e.style.display = "block";
+    inboxContainer.style.display = "none";
+    inboxLine.innerHTML = "";
   });
 });
 
