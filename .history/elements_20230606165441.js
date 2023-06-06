@@ -14,7 +14,7 @@ const pinResetContainer = document.getElementById("password-reset-container");
 const UpdateTimetableLinkContainer = document.getElementById(
   "sidebar-link-container7"
 );
-const sidebarContainer = document.getElementById("sidebar-container");
+const sidebarContainer = document.getElementById("");
 
 const inputs = document.querySelectorAll(".input");
 const buttons = document.querySelectorAll(".submit-button");
