@@ -143,7 +143,7 @@ const login = function () {
     studentInformationYear.textContent = `Year Group: ${target.year}`;
     studentInformationReferals.textContent =
       target.referals < 0 ? "Referals: 0" : `Referals: ${target.referals}`;
-    updateInboxLoad(target);
+    updateInboxLoad(currentAccount);
   }
 };
 
