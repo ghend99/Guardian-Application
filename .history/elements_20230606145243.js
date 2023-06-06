@@ -39,7 +39,7 @@ const btnPinResetOpen = document.getElementById("password-reset");
 const btnPinResetClose = document.getElementById("password-reset-close");
 const btnAddReferal = document.getElementById("add-referal");
 const btnLoginModalSubmit = document.getElementById("login-modal-submit");
-const btnUpdateTimetableLink = document.getElementById("update-timetable");
+const btnUpdateTimetableLink = document.getElementById("");
 
 const addStudentFirstNameInput = document.getElementById(
   "create-account-first-name"
