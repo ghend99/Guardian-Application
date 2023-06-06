@@ -179,7 +179,7 @@ button {
   border-radius: 5px;
 }
 
-#sidebar-open {
+.sidebar-open {
   position: absolute;
   width: 50px;
   right: 0;
