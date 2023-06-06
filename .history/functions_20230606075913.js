@@ -94,7 +94,3 @@ getSavedPins();
 const getStudentsLocalStorage = () => {
   studentsAccessed = JSON.parse(localStorage.getItem(`students`));
 };
-
-const getPinsLocalStorage = () => {
-  pinsAccessed = JSON.parse(localStorage.getItem(`pins`));
-};
