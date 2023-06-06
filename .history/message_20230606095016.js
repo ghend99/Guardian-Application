@@ -7,7 +7,7 @@ const sendMessage = function () {
   if (target === undefined) {
     alert("Not a valid message reciercer");
   } else {
-    target.inbox.push(message);
+    reciever.inbox.push(message);
     currentAccount.sent.push(message);
     composeMessageReciever.value = "";
     composeMessageText.value = "";

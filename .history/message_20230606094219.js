@@ -6,12 +6,7 @@ const sendMessage = function () {
   console.log(message, subject, reciever, target);
   if (target === undefined) {
     alert("Not a valid message reciercer");
-  } else {
-    target.inbox.push(message);
-    currentAccount.sent.push(message);
-    composeMessageReciever.value = "";
-    composeMessageText.value = "";
-    composeMessageSubject.value = "";
-    alert("Message Sent");
+  } else if (currentAccount === undefined) {
+    alert("You need to login to send messages");
   }
 };
