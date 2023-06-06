@@ -109,7 +109,5 @@ btnUpdateTimetableLink.addEventListener("click", function (e) {
 
 btnSidebarOpen.addEventListener("click", function (e) {
   e.preventDefault();
-  sidebarContainer.style.display = "grid";
-  btnSidebarOpen.style.display = "none";
-  btnSidebarClose.style.display = "block";
+  sidebarContainer.style;
 });
