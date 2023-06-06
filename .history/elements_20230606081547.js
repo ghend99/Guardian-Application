@@ -35,7 +35,6 @@ const btnStudentManagementClose = document.getElementById(
 const btnPinResetOpen = document.getElementById("password-reset");
 const btnPinResetClose = document.getElementById("password-reset-close");
 const btnAddReferal = document.getElementById("add-referal");
-const btnLoginModalSubmit = document.getElementById("login-modal-submit");
 
 const addStudentFirstNameInput = document.getElementById(
   "create-account-first-name"
@@ -77,4 +76,4 @@ const resetPinNewRetype = document.getElementById("password-reset-new-retype");
 const btnResetPinSubmit = document.getElementById("password-reset-submit");
 
 const loginInputFullname = document.querySelectorAll(".login-input-fullname");
-const loginInputPin = document.querySelectorAll(".login-input-pin");
+const loginInputPin = document.querySelectorAll(".");
