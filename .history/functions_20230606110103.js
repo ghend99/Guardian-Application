@@ -49,7 +49,6 @@ const Student = class {
     inbox,
     sent,
     from,
-    subject,
     pin,
     referals,
     year,
