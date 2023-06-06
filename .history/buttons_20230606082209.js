@@ -26,9 +26,3 @@ btnLoginHeader.addEventListener("click", function (e) {
     e.style.display = "block";
   });
 });
-
-btnLoginModalOpen.addEventListener("click", function (e) {
-  e.preventDefault();
-  loginContainer.style.display = "block";
-  mainContainer.style.filter = "blur(3px)";
-});
