@@ -16,7 +16,7 @@ const darkModeToggle = function () {
     e.classList.add("button-dark-mode");
   });
   sidebarIcon.forEach((e) => {
-    e.src = "./images/menu-white.png";
+    e.src = "./";
   });
   btnDarkModeToggle.src = "./images/light-mode.png";
   btnLoginHeader.src = "./images/login-button-white.png";
