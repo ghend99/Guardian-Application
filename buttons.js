@@ -37,6 +37,7 @@ btnLoginHeader.addEventListener("click", function (e) {
     inboxContainer.style.display = "none";
     inboxLine.innerHTML = "";
   });
+  UpdateTimetableLinkContainer.style.display = "none";
 });
 
 btnLoginModalOpen.addEventListener("click", function (e) {
@@ -90,6 +91,7 @@ btnTimetableOpen.addEventListener("click", function (e) {
   e.preventDefault();
   inboxContainer.style.display = "none";
   timetableContainer.style.display = "grid";
+  UpdateTimetableLinkContainer.style.display = "block";
 });
 
 btnStudentManagementClose.addEventListener("click", function (e) {
