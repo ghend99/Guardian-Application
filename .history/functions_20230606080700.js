@@ -152,30 +152,3 @@ const addReferal = function () {
     alert(`Referal Sent`);
   }
 };
-
-const resetPin = function () {
-  getStudentsLocalStorage();
-  getPinsLocalStorage();
-  const target = students.find(
-    (stu) => stu.fullName === `${currentAccount.fullName}`
-  );
-  const oldPin = resetPinOldPin.value;
-  const newPin = resetPinNew.value;
-  if (newPin === target.pin) {
-    alert(`Please choose a different pin to current.`);
-  } else if (oldPin !== target.pin) {
-    alert(`Old pin does not match.`);
-  } else if (pins.includes(newPin)) {
-    alert(`Pin is already in use`);
-  } else {
-    target["pin"] = newPin;
-    pins.push(newPin);
-    console.log(target);
-    localStorage.setItem("students", JSON.stringify(students));
-    const pinIndex = pins.indexOf(oldPin);
-    if (pinIndex > -1) {
-      pins.splice(pinIndex, 1);
-    }
-    localStorage.setItem("pins", JSON.stringify(pins));
-  }
-};
