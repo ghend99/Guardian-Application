@@ -32,9 +32,3 @@ btnLoginModalOpen.addEventListener("click", function (e) {
   loginContainer.style.display = "block";
   mainContainer.style.filter = "blur(3px)";
 });
-
-btnLoginModalClose.addEventListener("click", function (e) {
-  e.preventDefault();
-  loginContainer.style.display = "none";
-  mainContainer.style.filter = "blur(0px)";
-});
