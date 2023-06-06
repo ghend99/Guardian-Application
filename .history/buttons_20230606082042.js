@@ -18,11 +18,3 @@ btnAddStudentClose.addEventListener("click", function (e) {
   addStudentContainer.style.display = "none";
   mainContainer.style.filter = "blur(0px)";
 });
-
-btnLoginHeader.addEventListener("click", function (e) {
-  e.preventDefault();
-  login();
-  studentInformation.forEach((e) => {
-    e.style.display = "block";
-  });
-});
