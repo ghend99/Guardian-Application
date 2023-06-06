@@ -74,5 +74,3 @@ const resetPinNew = document.getElementById("password-reset-new");
 const resetPinNewRetype = document.getElementById("password-reset-new-retype");
 
 const btnResetPinSubmit = document.getElementById("password-reset-submit");
-
-const loginInputFullname = document.querySelectorAll(".login-input-fullname");
