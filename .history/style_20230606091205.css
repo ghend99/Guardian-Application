@@ -97,10 +97,10 @@
   right: 10%;
 }
 
-#show-pin-header {
+#show-password-header {
   position: absolute;
   top: 135px;
-  right: 10%;
+  right: clamp(13%, 190px, 300px);
   margin: 0;
 }
 
@@ -447,10 +447,18 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .header-middle-section-logo,
-  #header-login-input-fullname,
-  #header-login-input-pin,
-  #show-pin-header,
+  .header-middle-section-logo {
+    display: none;
+  }
+
+  #header-login-input-fullname {
+    display: none;
+  }
+
+  #header-login-input-pin {
+    display: none;
+  }
+
   #header-login-button {
     display: none;
   }
