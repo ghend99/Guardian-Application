@@ -112,27 +112,3 @@ const createStudent = function () {
   localStorage.setItem("students", JSON.stringify(students));
   localStorage.setItem("pins", JSON.stringify(pins));
 };
-
-const login = function () {
-  getStudentsLocalStorage();
-  getPinsLocalStorage();
-  const loginName = loginHeaderFullnameInput.value;
-  const loginPin = loginHeaderPinInput.value;
-  const target = students.find(
-    (stu) => stu.fullName === `${loginName}` && stu.pin === `${loginPin}`
-  );
-  currentAccount = target;
-  if (target === undefined) {
-    alert("Incorrect login credentials");
-  } else {
-    loginHeaderFullnameInput.value = "";
-    loginHeaderPinInput.value = "";
-    loginHeaderPinInput.type = "password";
-    studentInformationFullName.textContent = `Student Name: ${target.fullName}`;
-    studentInformationFirstName.textContent = `First Name: ${target.firstName}`;
-    studentInformationLastName.textContent = `Last Name: ${target.lastName}`;
-    studentInformationYear.textContent = `Year Group: ${target.year}`;
-    studentInformationReferals.textContent =
-      target.referals < 0 ? "Referals: 0" : `Referals: ${target.referals}`;
-  }
-};
