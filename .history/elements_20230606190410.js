@@ -99,4 +99,4 @@ const inboxLine = document.getElementById("inbox-line");
 const btnSidebarOpen = document.getElementById("sidebar-open");
 const btnSidebarClose = document.getElementById("sidebar-close");
 
-const btnLoginModalShowPin = document.getElementById("login-modal-show-pin");
+const btnLoginModalShowPin = document.getElementById("login-modal-pin");
