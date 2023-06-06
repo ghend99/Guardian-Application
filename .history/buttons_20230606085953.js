@@ -42,7 +42,4 @@ btnLoginModalClose.addEventListener("click", function (e) {
 btnLoginModalSubmit.addEventListener("click", function (e) {
   e.preventDefault();
   loginModal();
-  studentInformation.forEach((e) => {
-    e.style.display = "block";
-  });
 });

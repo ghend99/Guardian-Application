@@ -142,7 +142,6 @@ const loginModal = function () {
   getPinsLocalStorage();
   const loginName = loginModalFullNameInput.value;
   const loginPin = loginModalPinInput.value;
-  console.log(loginName, loginPin);
   const target = students.find(
     (stu) => stu.fullName === `${loginName}` && stu.pin === `${loginPin}`
   );

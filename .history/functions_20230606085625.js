@@ -142,24 +142,10 @@ const loginModal = function () {
   getPinsLocalStorage();
   const loginName = loginModalFullNameInput.value;
   const loginPin = loginModalPinInput.value;
-  console.log(loginName, loginPin);
   const target = students.find(
     (stu) => stu.fullName === `${loginName}` && stu.pin === `${loginPin}`
   );
   currentAccount = target;
-  if (target === undefined) {
-    alert("Incorrect login details");
-  } else {
-    loginModalFullNameInput.value = "";
-    loginModalPinInput.value = "";
-    loginModalPinInput.type = "password";
-    studentInformationFullName.textContent = `Student Name: ${target.fullName}`;
-    studentInformationFirstName.textContent = `First Name: ${target.firstName}`;
-    studentInformationLastName.textContent = `Last Name: ${target.lastName}`;
-    studentInformationYear.textContent = `Year Group: ${target.year}`;
-    studentInformationReferals.textContent =
-      target.referals < 0 ? "Referals: 0" : `Referals: ${target.referals}`;
-  }
 };
 
 const addReferal = function () {
