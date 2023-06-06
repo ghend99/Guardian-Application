@@ -144,5 +144,4 @@ btnLoginModalShowPin.addEventListener("click", function (e) {
 
 btnAddReferal.addEventListener("click", function (e) {
   e.preventDefault();
-  addReferal();
 });
