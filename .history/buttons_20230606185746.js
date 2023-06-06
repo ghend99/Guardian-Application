@@ -132,7 +132,4 @@ btnSidebarClose.addEventListener("click", function (e) {
   btnSidebarClose.style.display = "none";
 });
 
-btnShowPin.addEventListener("click", function (e) {
-  e.preventDefault();
-  showPin();
-});
+btnShowPin.addEventListener;
