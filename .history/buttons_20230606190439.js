@@ -139,5 +139,5 @@ btnShowPin.addEventListener("click", function (e) {
 
 btnLoginModalShowPin.addEventListener("click", function (e) {
   e.preventDefault();
-  showPinLoginModal();
+  showPinLoginModal;
 });
