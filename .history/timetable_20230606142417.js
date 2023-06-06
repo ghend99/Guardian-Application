@@ -180,7 +180,7 @@ const friday5 = document.querySelector(".lesson-friday-5");
 
 btnUpdateTimetableLink.addEventListener("click", function (e) {
   e.preventDefault();
-  getStudentsLocalStorage();
+  
   const target = students.find(
     (stu) =>
       stu.fullName === `${currentAccount.fullName}` &&
