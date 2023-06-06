@@ -159,9 +159,3 @@ const tuesday2 = document.querySelector(".lesson-tuesday-2");
 const tuesday3 = document.querySelector(".lesson-tuesday-3");
 const tuesday4 = document.querySelector(".lesson-tuesday-4");
 const tuesday5 = document.querySelector(".lesson-tuesday-5");
-
-const wednesday1 = document.querySelector(".lesson-wednesday-1");
-const wednesday2 = document.querySelector(".lesson-wednesday-2");
-const wednesday3 = document.querySelector(".lesson-wednesday-3");
-const wednesday4 = document.querySelector(".lesson-wednesday-4");
-const wednesday5 = document.querySelector(".lesson-wednesday-5");
