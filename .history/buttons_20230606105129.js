@@ -22,11 +22,6 @@ btnAddStudentClose.addEventListener("click", function (e) {
 btndAddStudentSubmit.addEventListener("click", function (e) {
   e.preventDefault();
   createStudent();
-  addStudentFirstNameInput.value = "";
-  addStudentLastNameInput.value = "";
-  addStudentYearInput.value = "";
-  addStudentPinInput.value = "";
-  addStudentRePinInput.value = "";
 });
 
 btnLoginHeader.addEventListener("click", function (e) {
