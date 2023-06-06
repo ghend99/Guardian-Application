@@ -175,10 +175,9 @@ button {
 .sidebar-search-button {
   position: absolute;
   max-width: 75%;
-  min-width: 30px;
+  min-width: 70px;
   bottom: 20px;
   border-radius: 5px;
-  font-size: clamp(0.5rem, 0.6vw, 1.5rem);
 }
 
 #sidebar-open,
