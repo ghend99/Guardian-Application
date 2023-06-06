@@ -45,6 +45,7 @@ function makeRows(rows, cols) {
       cell.appendChild(inputLesson);
     }
     if (c >= 13 && c <= 17) {
+      inputLesson = document.createElement("input");
       inputLesson.type = "text";
       inputLesson.className = "lesson-tuesday-1";
       cell.appendChild(inputLesson);
