@@ -69,5 +69,5 @@ btnComposeMessageSubmit.addEventListener("click", function (e) {
 
 btnInboxOpen.addEventListener("click", function (e) {
   e.preventDefault();
-  inboxContainer.style.display = "block";
+  inboxContainer.style.dispaly = "block";
 });
