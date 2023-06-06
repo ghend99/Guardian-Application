@@ -76,4 +76,4 @@ const resetPinNewRetype = document.getElementById("password-reset-new-retype");
 
 const btnResetPinSubmit = document.getElementById("password-reset-submit");
 
-const loginModalFullNameInput = document.getElementById("login-modal-fullname");
+const loginModalFullNameInput = document.getElementById("");
