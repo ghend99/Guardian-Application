@@ -178,7 +178,7 @@ const friday3 = document.querySelector(".lesson-friday-3");
 const friday4 = document.querySelector(".lesson-friday-4");
 const friday5 = document.querySelector(".lesson-friday-5");
 
-const updateTimetableLink = function () {
+const updateTimetableLink {
   e.preventDefault();
   getStudentsLocalStorage();
   const target = students.find(
@@ -228,7 +228,7 @@ const updateTimetableLink = function () {
   );
   localStorage.setItem("students", JSON.stringify(students));
   alert(`Timetable information submitted`);
-};
+});
 
 const showStudentTiemtable = function () {
   monday1.value = currentAccount.lessons1[0];
