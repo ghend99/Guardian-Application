@@ -111,7 +111,6 @@ btnStudentManagementClose.addEventListener("click", function (e) {
   timetableContainer.style.display = "none";
   inboxContainer.style.display = "none";
   studentManagementHeading.textContent = "";
-  btnStudentManagementClose.style.display = "none";
 });
 
 btnUpdateTimetableLink.addEventListener("click", function (e) {
