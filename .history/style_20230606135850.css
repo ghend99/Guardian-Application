@@ -257,21 +257,6 @@ button {
   display: none;
 }
 
-:root {
-  --grid-cols: 1;
-  --grid-rows: 1;
-}
-
-.grid-item {
-  padding: 1em;
-  border: 1px solid #ddd;
-  text-align: center;
-}
-
-#timetable-input {
-  width: 100px;
-}
-
 #inbox-container {
   max-height: 90%;
   min-height: 466px;
