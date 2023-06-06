@@ -229,6 +229,7 @@ button {
   max-height: 600px;
   min-height: 500px;
   border-right: solid;
+  display: none;
 }
 
 .student-management-heading {

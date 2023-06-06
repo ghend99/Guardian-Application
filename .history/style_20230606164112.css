@@ -245,6 +245,7 @@ button {
   right: 21%;
   width: 30px;
   cursor: pointer;
+  display: none;
 }
 
 #timetable-container {

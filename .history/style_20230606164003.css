@@ -470,9 +470,9 @@ button {
   left: 17%;
 }
 
-@media screen and (min-width: 0) and (max-width: 1600px) {
+@media screen and (min-width: 0) and (max-width: 720px) {
   #show-timetable-heading {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
