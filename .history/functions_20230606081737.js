@@ -119,7 +119,6 @@ const login = function () {
 
   loginInputFullname.forEach((e) => {
     const loginFullname = e.value;
-    console.log(loginFullname);
   });
 
   const loginName = loginHeaderFullnameInput.value;

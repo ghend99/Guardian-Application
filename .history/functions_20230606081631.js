@@ -117,11 +117,6 @@ const login = function () {
   getStudentsLocalStorage();
   getPinsLocalStorage();
 
-  loginInputFullname.forEach((e) => {
-    const loginFullname = e.value;
-    console.log(loginFullname);
-  });
-
   const loginName = loginHeaderFullnameInput.value;
   const loginPin = loginHeaderPinInput.value;
   const target = students.find(

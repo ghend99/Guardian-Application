@@ -38,8 +38,3 @@ btnLoginModalClose.addEventListener("click", function (e) {
   loginContainer.style.display = "none";
   mainContainer.style.filter = "blur(0px)";
 });
-
-btnLoginModalSubmit.addEventListener("click", function (e) {
-  e.preventDefault();
-  login();
-});
