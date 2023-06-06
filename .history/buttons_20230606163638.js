@@ -92,7 +92,7 @@ btnTimetableOpen.addEventListener("click", function (e) {
   inboxContainer.style.display = "none";
   timetableContainer.style.display = "grid";
   UpdateTimetableLinkContainer.style.display = "flex";
-  studentManagementHeading.textContent = "Timetable";
+  studentManagementHeading.textContent = "TImetable";
 });
 
 btnStudentManagementClose.addEventListener("click", function (e) {
