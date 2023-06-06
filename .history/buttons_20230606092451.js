@@ -52,8 +52,3 @@ btnComposeMessageOpen.addEventListener("click", function (e) {
   composeMessageContainer.style.display = "block";
   mainContainer.style.filter = "blur(3px)";
 });
-
-btnComposeMessageClose.addEventListener("click", function (e) {
-  composeMessageContainer.style.display = "none";
-  mainContainer.style.filter = "blur(0px)";
-});
