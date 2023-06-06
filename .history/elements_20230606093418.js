@@ -84,4 +84,4 @@ const composeMessageReciever = document.getElementById(
 );
 const composeMessageSubject = document.getElementById("compose-message-title");
 const composeMessageText = document.getElementById("compose-message-text-area");
-const composeMessageSubmit = document.getElementById("compose-message-submit");
+const composeMessageSubmit = document.getElementById("");

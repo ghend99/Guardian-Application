@@ -82,6 +82,4 @@ const loginModalPinInput = document.getElementById("login-modal-pin");
 const composeMessageReciever = document.getElementById(
   "compose-message-reciever"
 );
-const composeMessageSubject = document.getElementById("compose-message-title");
-const composeMessageText = document.getElementById("compose-message-text-area");
-const composeMessageSubmit = document.getElementById("compose-message-submit");
+const composeMessageSubject = document.getElementById("");
