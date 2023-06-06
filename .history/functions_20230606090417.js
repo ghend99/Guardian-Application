@@ -18,7 +18,7 @@ const darkModeToggle = function () {
   btnLoginHeader.src = "./images/login-button-white.png";
   btnLoginModalOpen.src = "./images/login-white.png";
   logo.src = "./images/logo-white.png";
-  btnStudentManagementClose.src = "./images/close-white.png";
+  btnStudentManagementClose.src = "./images/";
 };
 
 const lightModeToggle = function () {
