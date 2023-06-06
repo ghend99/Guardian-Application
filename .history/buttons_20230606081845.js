@@ -12,9 +12,3 @@ btnAddStudentOpen.addEventListener("click", function (e) {
   addStudentContainer.style.display = "block";
   mainContainer.style.filter = "blur(3px)";
 });
-
-btnAddStudentClose.addEventListener("click", function (e) {
-  e.preventDefault();
-  addStudentContainer.style.display = "none";
-  mainContainer.style.filter = "blur(0px)";
-});
