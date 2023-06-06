@@ -131,7 +131,7 @@ button {
   position: absolute;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   right: 0;
   bottom: 0;
   max-width: 30%;
@@ -144,9 +144,9 @@ button {
   justify-content: center;
 }
 
-#sidebar-link-container6 {
+/* #sidebar-link-container6 {
   border-bottom: none;
-}
+} */
 
 #sidebar-link-container7 {
   display: none;
