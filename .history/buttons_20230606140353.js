@@ -82,7 +82,6 @@ btnComposeMessageSubmit.addEventListener("click", function (e) {
 
 btnInboxOpen.addEventListener("click", function (e) {
   e.preventDefault();
-  timetableContainer.style.display = "none";
   inboxContainer.style.display = "block";
 });
 
