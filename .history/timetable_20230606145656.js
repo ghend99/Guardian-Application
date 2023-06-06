@@ -231,35 +231,3 @@ btnUpdateTimetableLink.addEventListener("click", function (e) {
   localStorage.setItem("students", JSON.stringify(students));
   alert(`Timetable information submitted`);
 });
-
-const showStudentTiemtable = function () {
-  monday1.value = target.lessons1[0];
-  monday2.value = target.lessons2[1];
-  monday3.value = target.lessons3[2];
-  monday4.value = target.lessons4[3];
-  monday5.value = target.lessons5[4];
-
-  tuesday1.value = target.lessons1[0];
-  tuesday2.value = target.lessons2[1];
-  tuesday3.value = target.lessons3[2];
-  tuesday4.value = target.lessons4[3];
-  tuesday5.value = target.lessons5[4];
-
-  wednesday1.value = target.lessons1[0];
-  wednesday2.value = target.lessons2[1];
-  wednesday3.value = target.lessons3[2];
-  wednesday4.value = target.lessons4[3];
-  wednesday5.value = target.lessons5[4];
-
-  thursday1.value = target.lessons1[0];
-  thursday2.value = target.lessons2[1];
-  thursday3.value = target.lessons3[2];
-  thursday4.value = target.lessons4[3];
-  thursday5.value = target.lessons5[4];
-
-  friday1.value = target.lessons1[0];
-  friday2.value = target.lessons2[1];
-  friday3.value = target.lessons3[2];
-  friday4.value = target.lessons4[3];
-  friday5.value = target.lessons5[4];
-};
