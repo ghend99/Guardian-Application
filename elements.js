@@ -11,7 +11,7 @@ const addStudentContainer = document.getElementById("create-account-container");
 const inboxContainer = document.getElementById("inbox-container");
 const timetableContainer = document.getElementById("timetable-container");
 const pinResetContainer = document.getElementById("password-reset-container");
-const btnUpdateTimetableLink = document.getElementById(
+const UpdateTimetableLinkContainer = document.getElementById(
   "sidebar-link-container7"
 );
 
