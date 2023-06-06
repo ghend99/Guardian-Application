@@ -1,0 +1,543 @@
+button {
+  cursor: pointer;
+}
+
+.input {
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  border-bottom: solid;
+  outline: none;
+}
+
+.page-headers {
+  font-family: "Roboto", Arial;
+}
+
+.modal-header {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  border: solid;
+  border-radius: 5px;
+}
+
+.input-dark-mode {
+  color: white;
+  border-color: white;
+}
+
+.button-dark-mode {
+  color: white;
+  background-color: black;
+}
+
+#main-container {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 50%;
+  min-width: 700px;
+  max-height: 1200px;
+  min-height: 1000px;
+  margin-top: 100px;
+  border: solid;
+  border-radius: 5px;
+}
+
+#header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  max-height: 200px;
+  min-height: 150px;
+  width: 100%;
+  border-bottom: solid;
+}
+
+#header-school-name {
+  position: absolute;
+  top: 20px;
+  left: 17px;
+  font-size: clamp(1rem, 1vw, 2rem);
+  font-weight: bold;
+  border-bottom: solid;
+}
+
+#header-school-slogan {
+  position: absolute;
+  top: clamp(5%, 70px, 80px);
+  left: clamp(45px, 5%, 70px);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  margin-top: 10px;
+  font-style: italic;
+}
+
+#header-container-middle-section {
+  display: flex;
+  justify-content: center;
+}
+
+.header-middle-section-logo {
+  width: 60%;
+}
+
+#header-login-input-fullname {
+  position: absolute;
+  top: 75px;
+  width: 13%;
+  right: 10%;
+}
+
+#header-login-input-pin {
+  position: absolute;
+  top: 110px;
+  width: 13%;
+  right: 10%;
+}
+
+#show-pin-header {
+  position: absolute;
+  top: 135px;
+  right: 10%;
+  margin: 0;
+  cursor: pointer;
+}
+
+#header-login-button {
+  position: absolute;
+  width: 50px;
+  right: 3%;
+  top: 85px;
+  cursor: pointer;
+}
+
+.header-dark-mode-toggle {
+  position: absolute;
+  width: 50px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.login-modal-open {
+  display: none;
+}
+
+#sidebar-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  right: 0;
+  bottom: 0;
+  max-width: 30%;
+  min-width: 20%;
+  max-height: 1000px;
+  min-height: 900px;
+  z-index: 1;
+}
+
+#sidebar-link-container1 {
+  justify-content: center;
+}
+
+/* #sidebar-link-container6 {
+  border-bottom: none;
+} */
+
+#sidebar-link-container7 {
+  display: none;
+  border-bottom: none;
+}
+
+.sidebar-link-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid;
+}
+
+.sidebar-link-header {
+  position: absolute;
+  font-size: 20px;
+}
+
+.sidebar-input {
+  position: absolute;
+  margin-top: 60px;
+  width: 80%;
+}
+
+.sidebar-search-button {
+  position: absolute;
+  max-width: 75%;
+  min-width: 30px;
+  bottom: 20px;
+  border-radius: 5px;
+  font-size: clamp(0.5rem, 0.6vw, 1.5rem);
+}
+
+#sidebar-open,
+#sidebar-close {
+  position: absolute;
+  width: 50px;
+  right: 0;
+  top: 155px;
+  display: none;
+}
+
+#sidebar-close {
+  right: 120px;
+}
+
+#student-information-container {
+  max-height: 800px;
+  min-height: 400px;
+  max-width: 80%;
+  min-width: 50%;
+  border-bottom: solid;
+  border-right: solid;
+}
+
+#student-information-name-header {
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: solid;
+  width: fit-content;
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.student-information {
+  margin-left: 40px;
+  display: none;
+}
+
+.student-information-general-header {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+#password-reset {
+  border-bottom: solid;
+  font-weight: bold;
+  width: fit-content;
+  cursor: pointer;
+}
+
+#student-management-container {
+  max-width: 80%;
+  min-width: 50%;
+  max-height: 600px;
+  min-height: 500px;
+  border-right: solid;
+}
+
+.student-management-heading {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0;
+  margin-left: 20px;
+  width: fit-content;
+}
+
+#student-management-close {
+  position: absolute;
+  bottom: 45.7%;
+  right: 21%;
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#timetable-container {
+  position: relative;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  /* top: 50px; */
+  overflow: scroll;
+  max-height: 90%;
+  min-height: 466px;
+  /* max-width: 99.6%;
+  min-width: 250px; */
+  display: none;
+}
+
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+.grid-item {
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#timetable-input {
+  width: 100px;
+}
+
+#inbox-container {
+  max-height: 90%;
+  min-height: 466px;
+  max-width: 99.6%;
+  min-width: 250px;
+  display: none;
+}
+
+#inbox-header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 50px;
+  /* background-color: aqua; */
+  overflow-y: auto;
+  font-family: "Roboto", Arial;
+}
+
+.inbox-header-header {
+  margin-top: 0;
+}
+
+#inbox-line {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+  width: 100%;
+  height: 50px;
+  /* background-color: darkorange; */
+  overflow-y: auto;
+  font-family: "EB Garamond", Arial;
+}
+
+#login-modal-container,
+#create-account-container,
+#compose-message-container,
+#password-reset-container {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%);
+  text-align: center;
+  border: solid;
+  border-radius: 5px;
+  display: none;
+}
+
+#login-modal-container {
+  max-width: 40%;
+  min-width: 300px;
+  max-height: 400px;
+  min-height: 300px;
+  text-align: center;
+  border: solid;
+  border-radius: 5px;
+  display: none;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+#login-modal-fullname {
+  position: absolute;
+  top: 120px;
+  left: 50px;
+}
+
+#login-modal-pin {
+  position: absolute;
+  top: 170px;
+  left: 50px;
+}
+
+#login-modal-show-pin {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#login-modal-submit {
+  left: 15%;
+}
+
+#login-modal-submit,
+#create-account-submit,
+#compose-message-submit,
+#password-reset-submit {
+  position: absolute;
+  bottom: 20px;
+  max-height: 60px;
+  min-height: 30px;
+  max-width: 20%;
+  min-width: 200px;
+}
+
+#create-account-container {
+  max-width: 60%;
+  min-width: 400px;
+  max-height: 600px;
+  min-height: 500px;
+}
+
+.create-account-input,
+.compose-message-input,
+.password-reset-input {
+  position: absolute;
+  left: 30px;
+}
+
+#create-account-first-name {
+  top: 80px;
+}
+
+#create-account-last-name {
+  top: 150px;
+}
+
+#create-account-year {
+  top: 220px;
+}
+
+#create-account-pin {
+  top: 290px;
+}
+
+#create-account-submit {
+  left: 25%;
+}
+
+#create-account-repin {
+  position: absolute;
+  top: 360px;
+  left: 30px;
+}
+
+#compose-message-container {
+  max-width: 60%;
+  min-width: 400px;
+  max-height: 600px;
+  min-height: 500px;
+}
+
+.modal-close {
+  position: absolute;
+  width: 30px;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+#compose-message-reciever {
+  top: 80px;
+}
+
+#compose-message-title {
+  top: 130px;
+}
+
+#compose-message-text-area {
+  position: absolute;
+  top: 35%;
+  left: 30px;
+  max-height: 80%;
+  min-height: 230px;
+  max-width: 100%;
+  min-width: 280px;
+}
+
+#compose-message-submit {
+  left: 25%;
+}
+
+#password-reset-container {
+  max-width: 40%;
+  min-width: 300px;
+  max-height: 400px;
+  min-height: 300px;
+}
+
+#password-reset-new {
+  top: 120px;
+}
+
+#password-reset-new-retype {
+  top: 165px;
+}
+
+#password-reset-submit {
+  left: 17%;
+}
+
+/* @media screen and (min-width: 0) and (max-width: 1600px) {
+  #show-timetable-heading {
+    font-size: 18px;
+  }
+} */
+
+@media screen and (min-width: 0) and (max-width: 720px) {
+  #main-container {
+    max-width: 600px;
+    min-width: 300px;
+  }
+
+  #header-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header-middle-section-logo,
+  #header-login-input-fullname,
+  #header-login-input-pin,
+  #show-pin-header,
+  #header-login-button {
+    display: none;
+  }
+
+  .login-modal-open {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 100px;
+    width: 50px;
+  }
+
+  #sidebar-container {
+    display: none;
+  }
+
+  .sidebar-link-header {
+    font-size: 12px;
+  }
+
+  #sidebar-open {
+    display: block;
+  }
+
+  .student-information-name-header {
+    margin-left: 15px;
+  }
+
+  .student-information-general-header {
+    margin-left: 25px;
+    padding: 0;
+  }
+
+  .student-information {
+    margin-left: 28px;
+  }
+}
