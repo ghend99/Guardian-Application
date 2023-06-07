@@ -262,10 +262,10 @@ const searchStudent = function () {
   if (target === undefined) {
     alert("Not a valid user");
   } else {
-    studentInformationFullName.textContent = `Student Name: ${target.fullName}`;
+    studentInformationFullName.textContent = `${target.fullName}`;
     studentInformationFirstName.textContent = `First Name: ${target.firstName}`;
     studentInformationLastName.textContent = `last Name: ${target.lastName}`;
-    studentInformationYear.textContent = `Year Group: ${target.year}`;
+    studentInformationYear.textContent = `Year: ${target.year}`;
     studentInformationReferals.textContent = `Referals: ${target.referals}`;
   }
 };

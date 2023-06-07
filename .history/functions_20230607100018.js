@@ -257,15 +257,9 @@ const searchStudent = function () {
   getPinsLocalStorage();
   const searchParameter = searchStudentInput.value;
   const target = students.find((stu) => stu.fullName === `${searchParameter}`);
-  console.log(searchParameter);
-  console.log(target);
   if (target === undefined) {
     alert("Not a valid user");
   } else {
-    studentInformationFullName.textContent = `Student Name: ${target.fullName}`;
-    studentInformationFirstName.textContent = `First Name: ${target.firstName}`;
-    studentInformationLastName.textContent = `last Name: ${target.lastName}`;
-    studentInformationYear.textContent = `Year Group: ${target.year}`;
-    studentInformationReferals.textContent = `Referals: ${target.referals}`;
+    studentManagementHeading.textContent = `${target.fullName}`;
   }
 };
