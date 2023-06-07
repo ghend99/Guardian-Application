@@ -17,7 +17,7 @@ const UpdateTimetableLinkContainer = document.getElementById(
 );
 const sidebarContainer = document.getElementById("sidebar-container");
 const inboxLine = document.getElementById("inbox-line");
-const restPinContainer = document.getElementById("password-reset-container");
+const restPinContainer = document.getElementById("");
 
 ////////////////// General Queries //////////////////
 const inputs = document.querySelectorAll(".input");
