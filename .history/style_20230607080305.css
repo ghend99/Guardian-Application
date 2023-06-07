@@ -28,12 +28,12 @@ button {
 }
 
 .input-dark-mode {
-  color: white;
+  color: black;
   border-color: white;
 }
 
 .button-dark-mode {
-  color: black;
+  color: white;
   background-color: white;
 }
 
