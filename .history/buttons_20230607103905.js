@@ -170,6 +170,4 @@ btnPinResetClose.addEventListener("click", function (e) {
 
 btnResetPinSubmit.addEventListener("click", function (e) {
   e.preventDefault();
-  resetPin();
-  restPinContainer.style.display = "none";
 });
