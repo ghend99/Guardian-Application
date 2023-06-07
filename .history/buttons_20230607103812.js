@@ -165,5 +165,4 @@ btnPinResetOpen.addEventListener("click", function (e) {
 
 btnPinResetClose.addEventListener("click", function (e) {
   e.preventDefault();
-  restPinContainer.style.display = "none";
 });
