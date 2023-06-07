@@ -131,10 +131,6 @@ const createStudent = function () {
   console.log(addStudentYearInput.value);
   if (addStudentYearInput.value < 4 && addStudentYearInput.value < 13) {
     alert("Year group range is 4-13");
-    addStudentYearInput.value = addStudentYearInput.value;
-    return;
-  } else if (addStudentPinInput.value !== addStudentRePinInput.value) {
-    alert("Pins must match");
   } else {
     students.push(newStudent);
     pins.push(addStudentPinInput.value);
