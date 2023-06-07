@@ -270,6 +270,6 @@ const searchStudent = function () {
     btnTimetableOpen.addEventListener("click", function () {
       btnUpdateTimetableLink.disabled = true;
     });
-    btnPinResetOpen.style.display = "none";
+    btnPinResetOpen.disbaled = true;
   }
 };

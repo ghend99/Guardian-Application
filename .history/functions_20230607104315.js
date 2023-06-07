@@ -269,7 +269,7 @@ const searchStudent = function () {
     studentInformationReferals.textContent = `Referals: ${target.referals}`;
     btnTimetableOpen.addEventListener("click", function () {
       btnUpdateTimetableLink.disabled = true;
+      btnPinResetOpen.style.display = "none";
     });
-    btnPinResetOpen.style.display = "none";
   }
 };
