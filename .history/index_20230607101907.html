@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="header-container">
+        <div id="header-container-left-section">
+          <p id="header-school-name" class="page-headers">
+            British School of Advancement
+          </p>
+          <p id="header-school-slogan" class="page-headers">
+            Where the future starts
+          </p>
+        </div>
+        <div id="header-container-middle-section">
+          <img class="header-middle-section-logo" src="./images/logo.png" />
+        </div>
+        <div id="header-container-right-section">
+          <input
+            id="header-login-input-fullname"
+            class="login-input-fullname login-input input"
+            type="text"
+            placeholder="First name..."
+          />
+          <input
+            id="header-login-input-pin"
+            class="login-input-pin login-input input"
+            placeholder="Pin..."
+            type="password"
+          />
+          <p id="show-pin-header">Show Pin</p>
+          <img
+            id="header-login-button"
+            class="login-button"
+            src="./images/login-button.png"
+          />
+          <img class="header-dark-mode-toggle" src="./images/dark-mode.png" />
+          <img class="login-modal-open" src="./images/login.png" />
+        </div>
+      </div>
+      <div id="sidebar-container">
+        <div id="sidebar-link-container1" class="sidebar-link-container">
+          <p class="sidebar-link-header page-headers">Search Student</p>
+          <input
+            id="search-student-fullname"
+            class="sidebar-input input"
+            placeholder="Name..."
+          />
+          <button
+            id="search-student"
+            class="sidebar-search-button submit-button"
+          >
+            Search
+          </button>
+        </div>
+        <div id="sidebar-link-container2" class="sidebar-link-container">
+          <p class="sidebar-link-header page-headers">Add Student</p>
+          <button id="add-student" class="sidebar-search-button submit-button">
+            Add
+          </button>
+        </div>
+        <div id="sidebar-link-container3" class="sidebar-link-container">
+          <p class="sidebar-link-header page-headers">Send Message</p>
+          <button
+            id="compose-message-open"
+            class="sidebar-search-button submit-button"
+          >
+            Compose
+          </button>
+        </div>
+        <div id="sidebar-link-container4" class="sidebar-link-container">
+          <p class="sidebar-link-header page-headers">Add Referal</p>
+          <input
+            id="add-referal-fullname"
+            class="sidebar-input input"
+            placeholder="Name..."
+          />
+          <button id="add-referal" class="sidebar-search-button submit-button">
+            Add
+          </button>
+        </div>
+        <div id="sidebar-link-container5" class="sidebar-link-container">
+          <p
+            id="show-timetable-heading"
+            class="sidebar-link-header page-headers"
+          >
+            Show Timetable
+          </p>
+          <button
+            id="timetable-open"
+            class="sidebar-search-button submit-button"
+          >
+            Show
+          </button>
+        </div>
+        <div id="sidebar-link-container6" class="sidebar-link-container">
+          <p class="sidebar-link-header page-headers">Show Inbox</p>
+          <button id="inbox-open" class="sidebar-search-button submit-button">
+            Show
+          </button>
+        </div>
+        <div id="sidebar-link-container7" class="sidebar-link-container">
+          <p class="sidebar-link-header page-headers">Update Timetable</p>
+          <button
+            id="update-timetable"
+            class="sidebar-search-button submit-button"
+            disabled
+          >
+            Show
+          </button>
+        </div>
+      </div>
+      <img id="sidebar-open" class="sidebar-icon" src="./images/menu.png" />
+      <img id="sidebar-close" class="sidebar-icon" src="./images/menu.png" />
+
+      <div id="student-information-container">
+        <h1
+          id="student-information-name-header"
+          class="student-information page-headers"
+        >
+          Student Name:
+        </h1>
+        <h3 class="student-information student-information-general-header">
+          General Information
+        </h3>
+        <p id="student-information-first-name" class="student-information">
+          First Name:
+        </p>
+        <p id="student-information-last-name" class="student-information">
+          Last Name:
+        </p>
+        <p id="student-information-year" class="student-information">
+          Year Group:
+        </p>
+        <p id="student-information-referals" class="student-information">
+          Referals:
+        </p>
+        <p id="password-reset" class="student-information">Reset Password</p>
+      </div>
+
+      <div id="student-management-container">
+        <p class="student-management-heading"></p>
+        <img id="student-management-close" src="./images/close.png" />
+        <div id="timetable-container"></div>
+        <div id="inbox-container">
+          <div id="inbox-header">
+            <p class="inbox-header-header">Date</p>
+            <p class="inbox-header-header">Sender</p>
+            <p class="inbox-header-header">Reciever</p>
+            <p class="inbox-header-header">Subject</p>
+            <p class="inbox-header-header">Message</p>
+          </div>
+          <div id="inbox-line">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="login-modal-container">
+      <h1 class="login-modal-header modal-header page-headers">Login</h1>
+      <img
+        id="login-modal-close"
+        class="modal-close"
+        src="./images/close.png"
+      />
+      <input
+        id="login-modal-fullname"
+        class="login-input-fullname login-modal-input input"
+        type="text"
+        placeholder="Full name..."
+      />
+      <input
+        id="login-modal-pin"
+        class="login-input-pin login-modal-input input"
+        type="password"
+        placeholder="Pin..."
+      />
+      <p id="login-modal-show-pin">Show Pin</p>
+      <input id="login-modal-submit" class="submit-button" type="submit" />
+    </div>
+
+    <div id="create-account-container">
+      <p id="create-account-header" class="modal-header page-headers">
+        Add Student Details
+      </p>
+      <img
+        id="create-account-close"
+        class="modal-close"
+        src="./images/close.png"
+      />
+      <input
+        id="create-account-first-name"
+        class="create-account-input input"
+        placeholder="First name..."
+      />
+      <input
+        id="create-account-last-name"
+        class="create-account-input input"
+        placeholder="Last name..."
+      />
+      <input
+        id="create-account-year"
+        class="create-account-input input"
+        placeholder="Year..."
+      />
+      <input
+        id="create-account-pin"
+        class="create-account-input input"
+        placeholder="Year..."
+      />
+
+      <input
+        id="create-account-repin"
+        class="create-account-input input"
+        placeholder="Year..."
+      />
+      <input id="create-account-submit" class="submit-button" type="submit" />
+    </div>
+
+    <div id="compose-message-container" class="">
+      <p id="compose-message-header" class="modal-header">Compose Message</p>
+      <img
+        id="compose-message-close"
+        class="modal-close"
+        src="./images/close.png"
+      />
+      <input
+        id="compose-message-reciever"
+        class="compose-message-input input"
+        type="text"
+        placeholder="Reciever..."
+      />
+      <input
+        id="compose-message-title"
+        class="compose-message-input input"
+        type="text"
+        placeholder="Subject..."
+      />
+      <textarea
+        id="compose-message-text-area"
+        placeholder="Message..."
+      ></textarea>
+      <input id="compose-message-submit" class="submit-button" type="submit" />
+    </div>
+
+    <div id="password-reset-container">
+      <p id="password-reset-header" class="modal-header page-headers">
+        Pin Reset
+      </p>
+      <img
+        id="password-reset-close"
+        class="modal-close"
+        src="./images/close.png"
+      />
+      <input
+        id="password-reset-old"
+        class="password-reset-input input"
+        type="number"
+        placeholder="Old Pin..."
+      />
+      <input
+        id="password-reset-new"
+        class="password-reset-input input"
+        type="number"
+        placeholder="New Pin..."
+      />
+      <input
+        id="password-reset-new-retype"
+        class="password-reset-input input"
+        type="number"
+        placeholder="New Pin..."
+      />
+      <input id="password-reset-submit" class="submit-button" type="submit" />
+    </div>
+
+    <script src="elements.js"></script>
+    <script src="functions.js"></script>
+
+    <script src="buttons.js"></script>
+    <script src="message.js"></script>
+    <script src="timetable.js"></script>
+  </body>
+</html>
