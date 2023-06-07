@@ -12,7 +12,9 @@ const darkModeToggle = function () {
   inputs.forEach((e) => {
     e.classList.add("input-dark-mode");
   });
-
+  // buttons.forEach((e) => {
+  //   e.classList.add("button-dark-mode");
+  // });
   sidebarIcon.forEach((e) => {
     e.src = "./images/menu-white.png";
   });
@@ -38,14 +40,14 @@ const lightModeToggle = function () {
   inputs.forEach((e) => {
     e.classList.remove("input-dark-mode");
   });
+  // buttons.forEach((e) => {
+  //   e.classList.remove("button-dark-mode");
+  // });
   sidebarIcon.forEach((e) => {
     e.src = "./images/menu.png";
   });
   btnModalClose.forEach((e) => {
     e.src = "./images/close.png";
-  });
-  modalContainers.forEach((e) => {
-    e.style.backgroundColor = "white";
   });
   btnDarkModeToggle.src = "./images/dark-mode.png";
   btnLoginHeader.src = "./images/login-button.png";
