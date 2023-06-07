@@ -160,7 +160,7 @@ const login = function () {
     studentInformationYear.textContent = `Year Group: ${target.year}`;
     studentInformationReferals.textContent =
       target.referals < 0 ? "Referals: 0" : `Referals: ${target.referals}`;
-
+    studentManagementHeading.textContent = "";
     updateInboxLoad(currentAccount);
     if (target.lessons1.length > 1) {
       showStudentTiemtable();
