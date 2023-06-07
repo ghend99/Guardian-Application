@@ -108,7 +108,7 @@ btnTimetableOpen.addEventListener("click", function (e) {
     UpdateTimetableLinkContainer.style.display = "flex";
     studentManagementHeading.textContent = "Timetable";
     btnStudentManagementClose.style.display = "block";
-    btnUpdateTimetableLink.disabled = false;
+    btnUpdateTimetableLink.disabled;
   }
 });
 
@@ -156,8 +156,4 @@ btnAddReferal.addEventListener("click", function (e) {
 btnSearchStudent.addEventListener("click", function (e) {
   e.preventDefault();
   searchStudent();
-});
-
-btnPinResetOpen.addEventListener("click", function (e) {
-  restPinContainer.style.display = "block";
 });

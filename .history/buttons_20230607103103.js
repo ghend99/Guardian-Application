@@ -158,6 +158,4 @@ btnSearchStudent.addEventListener("click", function (e) {
   searchStudent();
 });
 
-btnPinResetOpen.addEventListener("click", function (e) {
-  restPinContainer.style.display = "block";
-});
+btnPinResetOpen.addEventListener("click", function (e) {});

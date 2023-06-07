@@ -159,5 +159,5 @@ btnSearchStudent.addEventListener("click", function (e) {
 });
 
 btnPinResetOpen.addEventListener("click", function (e) {
-  restPinContainer.style.display = "block";
+  resetPin();
 });
