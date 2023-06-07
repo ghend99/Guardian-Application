@@ -34,13 +34,12 @@ btnLoginHeader.addEventListener("click", function (e) {
   login();
   studentInformation.forEach((e) => {
     e.style.display = "block";
+    inboxContainer.style.display = "none";
+    timetableContainer.style.display = "none";
+    inboxLine.innerHTML = "";
   });
-  inboxContainer.style.display = "none";
-  timetableContainer.style.display = "none";
-  inboxLine.innerHTML = "";
   UpdateTimetableLinkContainer.style.display = "none";
   studentManagementHeading.textContent = "";
-  btnStudentManagementClose.style.display = "none";
 });
 
 btnLoginModalOpen.addEventListener("click", function (e) {

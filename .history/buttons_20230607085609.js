@@ -40,7 +40,6 @@ btnLoginHeader.addEventListener("click", function (e) {
   inboxLine.innerHTML = "";
   UpdateTimetableLinkContainer.style.display = "none";
   studentManagementHeading.textContent = "";
-  btnStudentManagementClose.style.display = "none";
 });
 
 btnLoginModalOpen.addEventListener("click", function (e) {
