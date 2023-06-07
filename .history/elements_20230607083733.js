@@ -16,7 +16,6 @@ const UpdateTimetableLinkContainer = document.getElementById(
   "sidebar-link-container7"
 );
 const sidebarContainer = document.getElementById("sidebar-container");
-const inboxLine = document.getElementById("inbox-line");
 
 ////////////////// General Queries //////////////////
 const inputs = document.querySelectorAll(".input");
@@ -50,7 +49,6 @@ const composeMessageReciever = document.getElementById(
 );
 const composeMessageSubject = document.getElementById("compose-message-title");
 const composeMessageText = document.getElementById("compose-message-text-area");
-const sidebarIcon = document.querySelectorAll(".sidebar-icon");
 
 ////////////////// Buttons //////////////////
 const btnDarkModeToggle = document.querySelector(".header-dark-mode-toggle");
@@ -74,13 +72,6 @@ const btnUpdateTimetableLink = document.getElementById("update-timetable");
 const btnShowPin = document.getElementById("show-pin-header");
 const btndAddStudentSubmit = document.getElementById("create-account-submit");
 const btnResetPinSubmit = document.getElementById("password-reset-submit");
-const btnComposeMessageSubmit = document.getElementById(
-  "compose-message-submit"
-);
-const btnSidebarOpen = document.getElementById("sidebar-open");
-const btnSidebarClose = document.getElementById("sidebar-close");
-const btnLoginModalShowPin = document.getElementById("login-modal-show-pin");
-const btnModalClose = document.querySelectorAll(".modal-close");
 
 ////////////////// Inputs //////////////////
 const addStudentFirstNameInput = document.getElementById(
@@ -96,5 +87,21 @@ const loginHeaderFullnameInput = document.getElementById(
   "header-login-input-fullname"
 );
 const loginHeaderPinInput = document.getElementById("header-login-input-pin");
+
 const loginModalFullNameInput = document.getElementById("login-modal-fullname");
 const loginModalPinInput = document.getElementById("login-modal-pin");
+
+const btnComposeMessageSubmit = document.getElementById(
+  "compose-message-submit"
+);
+
+const inboxLine = document.getElementById("inbox-line");
+
+const btnSidebarOpen = document.getElementById("sidebar-open");
+const btnSidebarClose = document.getElementById("sidebar-close");
+
+const btnLoginModalShowPin = document.getElementById("login-modal-show-pin");
+
+const sidebarIcon = document.querySelectorAll(".sidebar-icon");
+
+const btnModalClose = document.querySelectorAll(".modal-close");
