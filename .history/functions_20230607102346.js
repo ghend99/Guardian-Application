@@ -267,9 +267,6 @@ const searchStudent = function () {
     studentInformationLastName.textContent = `last Name: ${target.lastName}`;
     studentInformationYear.textContent = `Year Group: ${target.year}`;
     studentInformationReferals.textContent = `Referals: ${target.referals}`;
-    btnTimetableOpen.addEventListener("click", function () {
-      btnUpdateTimetableLink.disabled = true;
-      btnPinResetOpen.disabled = true;
-    });
+    btnUpdateTimetableLink.disabled = true;
   }
 };
